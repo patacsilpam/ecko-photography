@@ -1,7 +1,9 @@
 import Image from "next/image";
-
+import Page from "./pages/Home.jsx";
 export default function Home() {
   return (
-    <div></div>
+    <main>
+      <Page/>
+    </main>
   );
 }
