@@ -1,9 +1,14 @@
-import Image from "next/image";
-import Page from "./pages/Home.jsx";
-export default function Home() {
+'use client'
+import { Box, Container, DecorativeBox } from '@radix-ui/themes';
+import Image from 'next/image';
+import ImageBanner from './components/banner.png'
+export default function Page() {
   return (
-    <main>
-      <Page/>
-    </main>
+    <Box style={{backgroundImage: `url(${ImageBanner.src})`,width: '100%',height: '100vh'}} className='h-screen bg-cover'>
+    <Container size="1">
+      sfdg
+    </Container>
+  </Box>
+       
   );
 }
