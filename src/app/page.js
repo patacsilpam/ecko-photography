@@ -36,6 +36,7 @@
 'use client'
 import React, { useState } from 'react';
 import { Menu, X } from 'react-feather';
+import SocialProofComponent from './components/proof';
 
 export default function Hero() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -45,6 +46,7 @@ export default function Hero() {
   };
 
   return (
+    <>
     <div className="relative bg-cover bg-center h-screen flex items-center justify-center" style={{backgroundImage:"url('assets/banner.png')"}}>
       {/* Background Image */}
       <div className="absolute inset-0 bg-gray-900 opacity-10"></div>
@@ -99,5 +101,10 @@ export default function Hero() {
         <p className="text-white text-lg">Your awesome tagline goes here</p>
       </div>
     </div>
+
+    <div className="mx-auto ">
+      <SocialProofComponent/>
+    </div>
+    </>
   );
 }
