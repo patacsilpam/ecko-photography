@@ -1,24 +1,27 @@
-// components/Navbar.js
 'use client'
 import React, { useState } from 'react';
+import SocialProofComponent from './components/proof';
+import Link from 'next/link';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className='bg-cover h-screen relative' style={{backgroundImage:"url('assets/banner.png')"}}>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div>
+      <nav className='bg-cover h-screen relative' style={{backgroundImage:"url('assets/banner.webp')"}}>
+      <div class="absolute bg-slate-600 bg-opacity-10 -z-1"></div>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ">
         <div className="flex justify-between h-16">
           <div className="flex-shrink-0 flex items-center">
-            <span href="#" className="text-white text-2xl font-bold">Ecko Photography</span>
+            <span href="#" className="text-[#FFFFFF] text-2xl font-bold">Ecko Photography</span>
           </div>
           <div className="flex items-center">
-            <div className="hidden md:block">
-              <a href="#" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Link 1</a>
-              <a href="#" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Link 2</a>
-              <a href="#" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Link 3</a>
-              <a href="#" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Link 4</a>
-              <a href="#" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Link 5</a>
+            <div className="hidden md:block space-x-12">
+              <Link href="/" className="text-[#FFFFFF]  hover:text-[#277764] px-3 py-2 rounded-md text-sm font-semibold">Home</Link>
+              <Link href="/portfolio" className="text-[#FFFFFF]  hover:text-[#277764] px-3 py-2 rounded-md text-sm font-semibold">Portfolio</Link>
+              <Link href="/packages" className="text-[#FFFFFF]  hover:text-[#277764] px-3 py-2 rounded-md text-sm font-semibold">Packages</Link>
+              <Link href="/about" className="text-[#FFFFFF]  hover:text-[#277764] px-3 py-2 rounded-md text-sm font-semibold">About</Link>
+              <Link href="/contact" className="text-[#FFFFFF]  hover:text-[#277764] px-3 py-2 rounded-md text-sm font-semibold">Contact</Link>
             </div>
             <div className="md:hidden">
               <button onClick={() => setIsOpen(!isOpen)} className="text-white hover:text-gray-300 focus:outline-none">
@@ -35,21 +38,28 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden">
-          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-            <a href="#" className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Link 1</a>
-            <a href="#" className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Link 2</a>
-            <a href="#" className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Link 3</a>
-            <a href="#" className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Link 4</a>
-            <a href="#" className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Link 5</a>
+        <div className="md:hidden z-20 bg-slate-900">
+          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 text-center  flex flex-col h-46">
+              <Link href="/" className="text-[#FFFFFF]  hover:text-[#277764] px-3 py-2 rounded-md text-sm font-semibold">Home</Link>
+              <Link href="/portfolio" className="text-[#FFFFFF]  hover:text-[#277764] px-3 py-2 rounded-md text-sm font-semibold">Portfolio</Link>
+              <Link href="/packages" className="text-[#FFFFFF]  hover:text-[#277764] px-3 py-2 rounded-md text-sm font-semibold">Packages</Link>
+              <Link href="/about" className="text-[#FFFFFF]  hover:text-[#277764] px-3 py-2 rounded-md text-sm font-semibold">About</Link>
+              <Link href="/contact" className="text-[#FFFFFF]  hover:text-[#277764] px-3 py-2 rounded-md text-sm font-semibold">Contact</Link>
           </div>
         </div>
       )}
-<div className="absolute inset-0 flex items-center justify-center flex-col">
-        <h1 className="text-white text-4xl font-bold mb-4">Welcome to Your Website</h1>
-        <p className="text-white text-lg">Your awesome tagline goes here</p>
+      <div className=" absolute left-1/2 top-1/2 -translate-x-1/2 text-center -mt-12">
+        <div className='flex flex-col items-center'>
+          <h1 className="text-white md:text-5xl text-2xl font-bold">The pause button of life.</h1>
+          <span className="text-white md:text-lg  mt-3">Experience the beauty of life's pauses through our lens.</span> 
+          <button className="bg-[#277764] hover:bg-[#277764e4] text-slate-50 p-2 rounded-full w-36 mt-3">Book Now</button>
+        </div>
+       
       </div>
+     
     </nav>
+     <SocialProofComponent/>
+    </div>
   );
 };
 
