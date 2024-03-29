@@ -7,9 +7,9 @@ module.exports = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-      
-      }
+      fontFamily: {
+        'garamond': ['Garamond', 'serif'],
+      },
     },
   },
   plugins: [require("daisyui")],

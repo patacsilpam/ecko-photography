@@ -1,8 +1,5 @@
 import { Inter } from "next/font/google";
 import "./styles/globals-css/globals.css";
-import '@radix-ui/themes/styles.css';
-import Link from "next/link";
-import { Theme } from "@radix-ui/themes";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
@@ -11,9 +8,9 @@ export const metadata = {
 };
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" >
       <body className={inter.className}>
-        <Theme>{children}</Theme>
+        <mai className="font-garamond">{children}</mai>
       </body>
     </html>
   );
