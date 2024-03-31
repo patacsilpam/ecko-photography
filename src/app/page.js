@@ -1,6 +1,7 @@
 'use client'
 import React, { useState } from 'react';
 import SocialProofComponent from './components/proof';
+import ServicesComponent from './components/services'
 import Link from 'next/link';
 
 const Navbar = () => {
@@ -32,10 +33,7 @@ const Navbar = () => {
             </div>
           </div>
         </div>
-        
       </div>
-{/* Hero Text */}
-
       {/* Mobile Menu */}
       {isOpen && (
         <div className="md:hidden z-20 bg-slate-900">
@@ -54,11 +52,10 @@ const Navbar = () => {
           <span className="text-white md:text-lg  mt-3">Experience the beauty of life's pauses through our lens.</span> 
           <button className="bg-[#277764] hover:bg-[#277764e4] text-slate-50 p-2 rounded-full w-36 mt-3">Book Now</button>
         </div>
-       
       </div>
-     
     </nav>
      <SocialProofComponent/>
+     <ServicesComponent/>
     </div>
   );
 };
