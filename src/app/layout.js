@@ -10,7 +10,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" >
       <body className={inter.className}>
-        <mai className="font-garamond">{children}</mai>
+        <main className="font-garamond">{children}</main>
       </body>
     </html>
   );
