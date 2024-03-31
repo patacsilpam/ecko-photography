@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import SocialProofComponent from './components/proof';
 import ServicesComponent from './components/services'
+import FeaturedComponent from './components/featured';
 import Link from 'next/link';
 
 const Navbar = () => {
@@ -56,6 +57,7 @@ const Navbar = () => {
     </nav>
      <SocialProofComponent/>
      <ServicesComponent/>
+     <FeaturedComponent/>
     </div>
   );
 };
