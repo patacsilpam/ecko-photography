@@ -23,7 +23,9 @@ const Tabs = () => {
   ];
   return (
     <div className='h-screen bg-white flex flex-col'>
-      <div className="flex mt-10">
+      <br />
+      <h1 className='text-4xl text-[#292929] p-2 text-center'>FEATURED STORIES</h1>
+      <div className="flex justify-around mt-10">
         {tabs.map((tab, index) => (
           <button
             key={index}
