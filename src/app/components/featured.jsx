@@ -31,8 +31,8 @@ const Tabs = () => {
             key={index}
             className={`${
               index === activeTab
-                ? ' text-[#292929]'
-                : ' text-[#DADADD]'
+                ? ' text-[#292929] font-semibold'
+                : ' text-[#a6a6a9]'
             } px-4 py-2 mr-2 rounded focus:outline-none`}
             onClick={() => setActiveTab(index)}
           >
