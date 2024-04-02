@@ -1,30 +1,45 @@
 // components/Tabs.js
 import { useState } from 'react';
+const tabs = [
+  {
+    label: 'WEDDING',
+    content: [
+      {
+        story: 'Dulce & Lyndon'
+      },
+      {
+        story: 'Larah & Adriel'
+      },
+      {
+        story: 'Irma & Jordan'
+      },
+      {
+        story: 'Kris & JC'
+      },
+      {
+        story: 'Emilyn & Carl'
+      },
+      {
+        story: 'Peter & Bianca'
+      }
+    ]
+  },
+  {
+    label: 'PRENUP',
+    content: [
+      {
+        story: 'Dulce & Lyndon'
+      }
+    ]
+  }
+];
 
 const Tabs = () => {
   const [activeTab, setActiveTab] = useState(0);
-  const tabs = [
-    {
-      label: 'WEDDING',
-      content: <div>Content for Tab 1</div>,
-    },
-    {
-      label: 'PRENUP',
-      content: <div>Content for Tab 2</div>,
-    },
-    {
-      label: 'DEBUT',
-      content: <div>Content for Tab 3</div>,
-    },
-    {
-        label: 'CHRISTENING',
-        content: <div>Content for Tab 3</div>,
-    },
-  ];
   return (
     <div className='h-screen bg-white flex flex-col'>
       <br />
-      <h1 className='text-4xl text-[#292929] p-2 text-center'>FEATURED STORIES</h1>
+      <h1 className='text-4xl text-[#292929] p-10 text-center'>FEATURED STORIES</h1>
       <div className="flex justify-around mt-10">
         {tabs.map((tab, index) => (
           <button
@@ -40,8 +55,14 @@ const Tabs = () => {
           </button>
         ))}
       </div>
-      <div className="mt-4">
-        {tabs[activeTab].content}
+      <div className="mt-4 grid grid-cols-3 gap-3 place-items-center">
+        {
+          tabs[activeTab].content.map((tab,index) =>
+            <div key={index}>
+                <p>{tab.story}</p>
+            </div> 
+          )
+        }
       </div>
     </div>
   );
