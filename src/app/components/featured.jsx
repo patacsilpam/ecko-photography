@@ -1,44 +1,11 @@
 // components/Tabs.js
 import { useState } from 'react';
-const tabs = [
-  {
-    label: 'WEDDING',
-    content: [
-      {
-        story: 'Dulce & Lyndon'
-      },
-      {
-        story: 'Larah & Adriel'
-      },
-      {
-        story: 'Irma & Jordan'
-      },
-      {
-        story: 'Kris & JC'
-      },
-      {
-        story: 'Emilyn & Carl'
-      },
-      {
-        story: 'Peter & Bianca'
-      }
-    ]
-  },
-  {
-    label: 'PRENUP',
-    content: [
-      {
-        story: 'Dulce & Lyndon'
-      }
-    ]
-  }
-];
+import tabs from '../../../data/weddings'
 
 const Tabs = () => {
   const [activeTab, setActiveTab] = useState(0);
   return (
     <div className='h-screen bg-white flex flex-col'>
-      <br />
       <h1 className='text-4xl text-[#292929] p-10 text-center'>FEATURED STORIES</h1>
       <div className="flex justify-around mt-10">
         {tabs.map((tab, index) => (
@@ -64,6 +31,7 @@ const Tabs = () => {
           )
         }
       </div>
+      <button className='bg-[#292929] text-white w-32 p-2 m-auto'>View All</button>
     </div>
   );
 };
