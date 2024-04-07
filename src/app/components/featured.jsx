@@ -6,7 +6,9 @@ const Tabs = () => {
   const [activeTab, setActiveTab] = useState(0);
   return (
     <div className='h-screen bg-white flex flex-col'>
-      <h1 className='text-4xl text-[#292929] p-10 text-center'>FEATURED STORIES</h1>
+      <div className='mt-20'>
+        <h1 className='text-4xl text-[#292929] text-center'>FEATURED STORIES</h1>
+      </div>
       <div className="flex justify-around mt-10">
         {tabs.map((tab, index) => (
           <button
