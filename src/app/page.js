@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import SocialProofComponent from './components/proof';
 import ServicesComponent from './components/services'
 import FeaturedComponent from './components/featured';
+import NominationComponent from './components/nominations';
 import Link from 'next/link';
 
 const Navbar = () => {
@@ -58,6 +59,7 @@ const Navbar = () => {
      <SocialProofComponent/>
      <ServicesComponent/>
      <FeaturedComponent/>
+     <NominationComponent/>
     </div>
   );
 };
