@@ -60,6 +60,9 @@ const Navbar = () => {
      <ServicesComponent/>
      <FeaturedComponent/>
      <NominationComponent/>
+     <footer className='h-screen bg-[#102923]'>
+     <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FEcK0Photography%2Fvideos%2F159396330512883%2F&show_text=false&width=560&t=0" width={560} height={314}   frameborder={0} allowfullscreen={true} allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen={true}></iframe>
+     </footer>
     </div>
   );
 };
