@@ -4,6 +4,9 @@ import SocialProofComponent from './components/proof';
 import ServicesComponent from './components/services'
 import FeaturedComponent from './components/featured';
 import NominationComponent from './components/nominations';
+import { LiaFacebookSquare } from "react-icons/lia";
+import { LiaInstagram } from "react-icons/lia";
+import { MdOutlineEmail } from "react-icons/md";
 import Link from 'next/link';
 
 const Navbar = () => {
@@ -61,7 +64,47 @@ const Navbar = () => {
      <FeaturedComponent/>
      <NominationComponent/>
      <footer className='h-screen bg-[#102923]'>
-     <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FEcK0Photography%2Fvideos%2F159396330512883%2F&show_text=false&width=560&t=0" width={560} height={314}   frameborder={0} allowfullscreen={true} allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen={true}></iframe>
+        {/*videos link */}
+        <section className='grid grid-cols-2 md:grid-cols-4  place-items-center mt-5 gap-5'>
+          <div className='bg-slate-300 h-52 w-56'>1</div>
+          <div className='bg-slate-300 h-52 w-56'>1</div>
+          <div className='bg-slate-300 h-52 w-56'>1</div>
+          <div className='bg-slate-300 h-52 w-56'>1</div>
+        </section>
+        <hr className='my-24'/>
+        <section className='flex justify-around mt-10'>
+            {/*INQUIRE*/}
+            <div>
+              <h3 className='text-[#C6A24C] text-3xl'>INQUIRE</h3>
+              <span className='text-[#FEFBF6] text-2xl flex justify-center'>{`let's chat`}</span>
+            </div>
+            {/*ECKO PHOTOGRAPHY*/}
+            <div>
+              <h3 className='text-[#C6A24C] text-3xl'>ECKO PHOTOGRAPHY</h3>
+              <span className='text-[#FEFBF6] text-2xl flex justify-center'>based in the Philippines.</span>
+            </div>
+            {/*FOLLOW ME ON*/}
+            <div>
+              <h3 className='text-[#C6A24C] text-3xl'>FOLLOW ME ON</h3>
+              <div className='flex justify-around'>
+                <Link href={"https://www.facebook.com/EcK0Photography"} target='blank'><LiaFacebookSquare className='text-white text-2xl'/></Link>
+                <Link href={"https://www.instagram.com/_eckophotography/"}><LiaInstagram className='text-white text-2xl'/></Link>
+                <a href="mailto:jerico.dirilo.dl@gmail.com"><MdOutlineEmail className='text-white text-2xl'/></a>
+              </div>
+            </div>
+        </section>
+        <section>
+            <hr/>
+            <nav className='flex justify-around'>
+                <Link href="/" className="text-[#FFFFFF]  hover:text-[#277764] px-3 py-2 rounded-md text-sm font-semibold">Home</Link>
+                <Link href="/portfolio" className="text-[#FFFFFF]  hover:text-[#277764] px-3 py-2 rounded-md text-sm font-semibold">Portfolio</Link>
+                <Link href="/packages" className="text-[#FFFFFF]  hover:text-[#277764] px-3 py-2 rounded-md text-sm font-semibold">Packages</Link>
+                <Link href="/about" className="text-[#FFFFFF]  hover:text-[#277764] px-3 py-2 rounded-md text-sm font-semibold">About</Link>
+                <Link href="/contact" className="text-[#FFFFFF]  hover:text-[#277764] px-3 py-2 rounded-md text-sm font-semibold">Contact</Link>
+            </nav>
+            <hr/>
+            <span className='text-white flex justify-center'>© 2024 ECKO PHOTOGRAPHY ALL RIGHTS RESERVED </span>
+        </section>
      </footer>
     </div>
   );
