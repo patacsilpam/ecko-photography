@@ -54,7 +54,7 @@ const Navbar = () => {
       <div className=" absolute left-1/2 top-1/2 -translate-x-1/2 text-center -mt-12">
         <div className='flex flex-col items-center'>
           <h1 className="text-white md:text-5xl text-2xl font-bold">The pause button of life.</h1>
-          <span className="text-white md:text-lg  mt-3">Experience the beauty of life &apos; pauses through our lens.</span> 
+          <span className="text-white md:text-lg  mt-3">Experience the beauty of life&apos;s pauses through our lens.</span> 
           <button className="bg-[#277764] hover:bg-[#277764e4] text-slate-50 p-2 rounded-full w-36 mt-3">Book Now</button>
         </div>
       </div>
@@ -65,12 +65,12 @@ const Navbar = () => {
      <NominationComponent/>
      <footer className='h-screen bg-[#102923]'>
         {/*videos link */}
-        <section className='grid grid-cols-2 md:grid-cols-4  place-items-center mt-5 gap-5'>
+        {/**<section className='grid grid-cols-2 md:grid-cols-4  place-items-center mt-5 gap-5'>
           <div className='bg-slate-300 h-52 w-56'>1</div>
           <div className='bg-slate-300 h-52 w-56'>1</div>
           <div className='bg-slate-300 h-52 w-56'>1</div>
           <div className='bg-slate-300 h-52 w-56'>1</div>
-        </section>
+        </section> */}
         <hr className='my-24'/>
         <section className='flex justify-around mt-10'>
             {/*INQUIRE*/}
