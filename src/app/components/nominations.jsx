@@ -4,7 +4,7 @@ import Nominations from './../../../public/assets/nomination.webp'
 import Events from './../../../public/assets/events.webp'
 const nominations = () => {
   return (
-    <div className='h-screen bg-white'>
+    <div className='h-screen bg-white py-24'>
         <div>
             <h1 className="text-4xl text-[#292929] text-center">Nominations and Event</h1>
         </div>

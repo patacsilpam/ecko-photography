@@ -64,10 +64,10 @@ const Navbar = () => {
         </div>
       </div>
     </nav>
+     <NominationComponent/>
      <SocialProofComponent/>
      <ServicesComponent/>
      <FeaturedComponent/> 
-     <NominationComponent/>
      <footer className=' bg-[#102923]'>   
         <section className='flex flex-col md:flex-row justify-around items-center py-10 md:space-y-0 space-y-10'>
             {/*INQUIRE*/}
