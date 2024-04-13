@@ -7,7 +7,12 @@ import NominationComponent from './components/nominations';
 import { LiaFacebookSquare } from "react-icons/lia";
 import { LiaInstagram } from "react-icons/lia";
 import { MdOutlineEmail } from "react-icons/md";
+import Wedding from './../../public/assets/wedding.webp'
+import Prenup from './../../public/assets/prenup.webp'
+import Debut from './../../public/assets/debut.webp'
+import Christening from './../../public/assets/christening.webp'
 import Link from 'next/link';
+import Image from 'next/image';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -63,46 +68,59 @@ const Navbar = () => {
      <ServicesComponent/>
      <FeaturedComponent/> 
      <NominationComponent/>
-     <footer className=' bg-[#102923]'>
-        {/*videos link */}
-      <section className='grid grid-cols-2 md:grid-cols-4  place-items-center mt-5 gap-5'>
-          <div className='bg-slate-300 h-1/2 w-1/2'>1</div>
-          <div className='bg-slate-300 h-1/2 w-1/2'>1</div>
-          <div className='bg-slate-300 h-1/2 w-1/2'>1</div>
-          <div className='bg-slate-300 h-1/2 w-1/2'>1</div>
-        </section> 
-        <section className='flex flex-col md:flex-row justify-around items-center mt-10 space-y-10'>
+     <footer className=' bg-[#102923]'>   
+        <section className='flex flex-col md:flex-row justify-around items-center py-10 md:space-y-0 space-y-10'>
             {/*INQUIRE*/}
             <div>
-              <h3 className='text-[#C6A24C] md:text-3xl text-lg'>INQUIRE</h3>
-              <span className='text-[#FEFBF6] text-2xl flex justify-center'>{`let's chat`}</span>
+              <h3 className='text-[#C6A24C] md:text-2xl text-lg'>INQUIRE</h3>
+              <span className='text-[#FEFBF6] text-xl flex justify-center'>let&apos;s chat </span>
             </div>
             {/*ECKO PHOTOGRAPHY*/}
             <div>
-              <h3 className='text-[#C6A24C] md:text-3xl text-lg'>ECKO PHOTOGRAPHY</h3>
-              <span className='text-[#FEFBF6] text-2xl flex justify-center'>based in the Philippines.</span>
+              <h3 className='text-[#C6A24C] md:text-2xl text-lg'>ECKO PHOTOGRAPHY</h3>
+              <span className='text-[#FEFBF6] text-xl flex justify-center'>based in the Philippines.</span>
             </div>
             {/*FOLLOW ME ON*/}
             <div>
-              <h3 className='text-[#C6A24C] md:text-3xl text-lg'>FOLLOW ME ON</h3>
+              <h3 className='text-[#C6A24C] md:text-xl text-lg'>FOLLOW ME ON</h3>
               <div className='flex justify-around'>
-                <Link href={"https://www.facebook.com/EcK0Photography"} target='blank'><LiaFacebookSquare className='text-white text-2xl'/></Link>
-                <Link href={"https://www.instagram.com/_eckophotography/"}><LiaInstagram className='text-white text-2xl'/></Link>
-                <a href="mailto:jerico.dirilo.dl@gmail.com"><MdOutlineEmail className='text-white text-2xl'/></a>
+                <Link href={"https://www.facebook.com/EcK0Photography"} target='blank'><LiaFacebookSquare className='text-white text-3xl'/></Link>
+                <Link href={"https://www.instagram.com/_eckophotography/"}><LiaInstagram className='text-white text-3xl'/></Link>
+                <a href="mailto:jerico.dirilo.dl@gmail.com"><MdOutlineEmail className='text-white text-3xl'/></a>
               </div>
             </div>
+           
         </section>
+        <hr className='border-[#b98a1ca0] px-3 mx-5 md:mx-10'/>
+          {/*videos link */}
+        <section className='grid grid-cols-2 md:grid-cols-4 gap-3  place-items-center py-7 px-5'>
+          <div>
+            <Image src={Wedding} alt='wedding' className='h-36 w-48 md:h-52 md:w-80 object-cover'/>
+          </div>
+          <div>
+            <Image src={Prenup} alt='prenup' className='h-36 w-48 md:h-52 md:w-80 object-cover'/>
+          </div>
+          <div>
+            <Image src={Debut} alt='debut' className='h-36 w-48 md:h-52 md:w-80 object-cover'/>
+          </div>
+          <div>
+            <Image src={Christening} alt='christening' className='h-36 w-48 md:h-52 md:w-80 object-cover'/>
+          </div>
+        </section> 
+        <hr className='border-[#b98a1ca0] px-3 mx-5 md:mx-10'/>
         <section className='p-3'>
             <nav className='flex justify-around'>
-                <Link href="/" className="text-[#FFFFFF]  hover:text-[#277764] px-3 py-2 rounded-md text-sm font-semibold">Home</Link>
-                <Link href="/portfolio" className="text-[#FFFFFF]  hover:text-[#277764] px-3 py-2 rounded-md text-sm font-semibold">Portfolio</Link>
-                <Link href="/packages" className="text-[#FFFFFF]  hover:text-[#277764] px-3 py-2 rounded-md text-sm font-semibold">Packages</Link>
-                <Link href="/about" className="text-[#FFFFFF]  hover:text-[#277764] px-3 py-2 rounded-md text-sm font-semibold">About</Link>
-                <Link href="/contact" className="text-[#FFFFFF]  hover:text-[#277764] px-3 py-2 rounded-md text-sm font-semibold">Contact</Link>
+                <Link href="/" className="text-[#FFFFFF]  hover:text-[#277764] px-3 py-2 rounded-md text-sm ">Home</Link>
+                <Link href="/portfolio" className="text-[#FFFFFF]  hover:text-[#277764] px-3 py-2 rounded-md text-sm ">Portfolio</Link>
+                <Link href="/packages" className="text-[#FFFFFF]  hover:text-[#277764] px-3 py-2 rounded-md text-sm ">Packages</Link>
+                <Link href="/about" className="text-[#FFFFFF]  hover:text-[#277764] px-3 py-2 rounded-md text-sm ">About</Link>
+                <Link href="/contact" className="text-[#FFFFFF]  hover:text-[#277764] px-3 py-2 rounded-md text-sm ">Contact</Link>
             </nav>
-      
         </section>
-        <small className='text-white flex justify-center text-sm'>© 2024 ECKO PHOTOGRAPHY ALL RIGHTS RESERVED </small>
+        <hr className='border-[#b98a1ca0] px-3 mx-5 md:mx-10'/>
+        <section className='mt-10'>
+          <small className='text-white flex justify-center text-sm py-5'>© 2024 ECKO PHOTOGRAPHY. ALL RIGHTS RESERVED </small>
+        </section>
      </footer>
     </div>
   );
