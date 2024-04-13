@@ -5,11 +5,11 @@ import tabs from '../../../data/weddings'
 const Tabs = () => {
   const [activeTab, setActiveTab] = useState(0);
   return (
-    <div className='h-screen bg-white flex flex-col'>
+    <div className='h-screen bg-white flex flex-col '>
       <div className='mt-20'>
-        <h1 className='text-4xl text-[#292929] text-center'>FEATURED STORIES</h1>
+        <h1 className='text-2xl md:text-4xl text-[#292929] text-center'>FEATURED STORIES</h1>
       </div>
-      <div className="flex justify-around mt-10">
+      <div className="flex md:flex-nowrap flex-wrap md:justify-around justify-between p-2 mt-10">
         {tabs.map((tab, index) => (
           <button
             key={index}
@@ -17,14 +17,14 @@ const Tabs = () => {
               index === activeTab
                 ? ' text-[#292929] font-semibold'
                 : ' text-[#a6a6a9]'
-            } px-4 py-2 mr-2 rounded focus:outline-none`}
+            }  rounded focus:outline-none`}
             onClick={() => setActiveTab(index)}
           >
             {tab.label}
           </button>
         ))}
       </div>
-      <div className="mt-4 grid grid-cols-3 gap-3 place-items-center">
+      <div className="mt-4 ">
         {
           tabs[activeTab].content.map((tab,index) =>
             <div key={index}>
