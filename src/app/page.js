@@ -53,7 +53,7 @@ const Navbar = () => {
       )}
       <div className=" absolute left-1/2 top-1/2 -translate-x-1/2 text-center -mt-12">
         <div className='flex flex-col items-center'>
-          <h1 className="text-white md:text-5xl text-2xl font-bold">The pause button of life.</h1>
+          <h1 className="text-white md:text-5xl text-1xl font-bold">The pause button of life.</h1>
           <span className="text-white md:text-lg  mt-3">Experience the beauty of life&apos;s pauses through our lens.</span> 
           <button className="bg-[#277764] hover:bg-[#277764e4] text-slate-50 p-2 rounded-full w-36 mt-3">Book Now</button>
         </div>
@@ -61,31 +61,30 @@ const Navbar = () => {
     </nav>
      <SocialProofComponent/>
      <ServicesComponent/>
-     <FeaturedComponent/>
+     <FeaturedComponent/> 
      <NominationComponent/>
-     <footer className='h-screen bg-[#102923]'>
+     <footer className=' bg-[#102923]'>
         {/*videos link */}
-        {/**<section className='grid grid-cols-2 md:grid-cols-4  place-items-center mt-5 gap-5'>
-          <div className='bg-slate-300 h-52 w-56'>1</div>
-          <div className='bg-slate-300 h-52 w-56'>1</div>
-          <div className='bg-slate-300 h-52 w-56'>1</div>
-          <div className='bg-slate-300 h-52 w-56'>1</div>
-        </section> */}
-        <hr className='my-24'/>
-        <section className='flex justify-around mt-10'>
+      <section className='grid grid-cols-2 md:grid-cols-4  place-items-center mt-5 gap-5'>
+          <div className='bg-slate-300 h-1/2 w-1/2'>1</div>
+          <div className='bg-slate-300 h-1/2 w-1/2'>1</div>
+          <div className='bg-slate-300 h-1/2 w-1/2'>1</div>
+          <div className='bg-slate-300 h-1/2 w-1/2'>1</div>
+        </section> 
+        <section className='flex flex-col md:flex-row justify-around items-center mt-10 space-y-10'>
             {/*INQUIRE*/}
             <div>
-              <h3 className='text-[#C6A24C] text-3xl'>INQUIRE</h3>
+              <h3 className='text-[#C6A24C] md:text-3xl text-lg'>INQUIRE</h3>
               <span className='text-[#FEFBF6] text-2xl flex justify-center'>{`let's chat`}</span>
             </div>
             {/*ECKO PHOTOGRAPHY*/}
             <div>
-              <h3 className='text-[#C6A24C] text-3xl'>ECKO PHOTOGRAPHY</h3>
+              <h3 className='text-[#C6A24C] md:text-3xl text-lg'>ECKO PHOTOGRAPHY</h3>
               <span className='text-[#FEFBF6] text-2xl flex justify-center'>based in the Philippines.</span>
             </div>
             {/*FOLLOW ME ON*/}
             <div>
-              <h3 className='text-[#C6A24C] text-3xl'>FOLLOW ME ON</h3>
+              <h3 className='text-[#C6A24C] md:text-3xl text-lg'>FOLLOW ME ON</h3>
               <div className='flex justify-around'>
                 <Link href={"https://www.facebook.com/EcK0Photography"} target='blank'><LiaFacebookSquare className='text-white text-2xl'/></Link>
                 <Link href={"https://www.instagram.com/_eckophotography/"}><LiaInstagram className='text-white text-2xl'/></Link>
@@ -93,8 +92,7 @@ const Navbar = () => {
               </div>
             </div>
         </section>
-        <section>
-            <hr/>
+        <section className='p-3'>
             <nav className='flex justify-around'>
                 <Link href="/" className="text-[#FFFFFF]  hover:text-[#277764] px-3 py-2 rounded-md text-sm font-semibold">Home</Link>
                 <Link href="/portfolio" className="text-[#FFFFFF]  hover:text-[#277764] px-3 py-2 rounded-md text-sm font-semibold">Portfolio</Link>
@@ -102,9 +100,9 @@ const Navbar = () => {
                 <Link href="/about" className="text-[#FFFFFF]  hover:text-[#277764] px-3 py-2 rounded-md text-sm font-semibold">About</Link>
                 <Link href="/contact" className="text-[#FFFFFF]  hover:text-[#277764] px-3 py-2 rounded-md text-sm font-semibold">Contact</Link>
             </nav>
-            <hr/>
-            <span className='text-white flex justify-center'>© 2024 ECKO PHOTOGRAPHY ALL RIGHTS RESERVED </span>
+      
         </section>
+        <small className='text-white flex justify-center text-sm'>© 2024 ECKO PHOTOGRAPHY ALL RIGHTS RESERVED </small>
      </footer>
     </div>
   );
