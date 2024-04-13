@@ -91,7 +91,7 @@ const Navbar = () => {
             </div>
            
         </section>
-        <hr className='border-[#b98a1ca0] px-3 mx-5 md:mx-10'/>
+        <hr className='border-[#b98a1c58] px-3 mx-5 md:mx-10'/>
           {/*videos link */}
         <section className='grid grid-cols-2 md:grid-cols-4 gap-3  place-items-center py-7 px-5'>
           <div>
@@ -107,7 +107,7 @@ const Navbar = () => {
             <Image src={Christening} alt='christening' className='h-36 w-48 md:h-52 md:w-80 object-cover'/>
           </div>
         </section> 
-        <hr className='border-[#b98a1ca0] px-3 mx-5 md:mx-10'/>
+        <hr className='border-[#b98a1c58] px-3 mx-5 md:mx-10'/>
         <section className='p-3'>
             <nav className='flex justify-around'>
                 <Link href="/" className="text-[#FFFFFF]  hover:text-[#277764] px-3 py-2 rounded-md text-sm ">Home</Link>
@@ -117,7 +117,7 @@ const Navbar = () => {
                 <Link href="/contact" className="text-[#FFFFFF]  hover:text-[#277764] px-3 py-2 rounded-md text-sm ">Contact</Link>
             </nav>
         </section>
-        <hr className='border-[#b98a1ca0] px-3 mx-5 md:mx-10'/>
+        <hr className='border-[#b98a1c58] px-3 mx-5 md:mx-10'/>
         <section className='mt-10'>
           <small className='text-white flex justify-center text-sm py-5'>© 2024 ECKO PHOTOGRAPHY. ALL RIGHTS RESERVED </small>
         </section>
