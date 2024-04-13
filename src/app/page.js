@@ -73,17 +73,17 @@ const Navbar = () => {
             {/*INQUIRE*/}
             <div>
               <h3 className='text-[#C6A24C] md:text-2xl text-lg'>INQUIRE</h3>
-              <span className='text-[#FEFBF6] text-xl flex justify-center'>let&apos;s chat </span>
+              <span className='text-[#FEFBF6] text-xl flex justify-center py-2'>let&apos;s chat </span>
             </div>
             {/*ECKO PHOTOGRAPHY*/}
             <div>
               <h3 className='text-[#C6A24C] md:text-2xl text-lg'>ECKO PHOTOGRAPHY</h3>
-              <span className='text-[#FEFBF6] text-xl flex justify-center'>based in the Philippines.</span>
+              <span className='text-[#FEFBF6] text-xl flex justify-center py-2'>based in the Philippines.</span>
             </div>
             {/*FOLLOW ME ON*/}
             <div>
               <h3 className='text-[#C6A24C] md:text-xl text-lg'>FOLLOW ME ON</h3>
-              <div className='flex justify-around'>
+              <div className='flex justify-around py-2'>
                 <Link href={"https://www.facebook.com/EcK0Photography"} target='blank'><LiaFacebookSquare className='text-white text-3xl'/></Link>
                 <Link href={"https://www.instagram.com/_eckophotography/"}><LiaInstagram className='text-white text-3xl'/></Link>
                 <a href="mailto:jerico.dirilo.dl@gmail.com"><MdOutlineEmail className='text-white text-3xl'/></a>
