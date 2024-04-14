@@ -100,7 +100,7 @@ const Navbar = () => {
             </Link>
           </div>
           <div>
-            <Link href={'https://www.facebook.com/EcK0Photography/videos/1549232525833176'} target='_blank' title='Alyssa and Jonathan | PRE-WEDDING VIDEO🍂'>
+            <Link href={'https://www.facebook.com/EcK0Photography/videos/1549232525833176'} target='_blank' title='Alyssa and Jonathan | Wedding Video Highlights🍂'>
               <Image src={AlyJon} alt='Alyssa and Jonathan' className='h-36 w-48 md:h-52 md:w-80 object-cover'/>
             </Link>
           </div>
