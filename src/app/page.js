@@ -95,12 +95,12 @@ const Navbar = () => {
           {/*videos link */}
         <section className='grid grid-cols-2 md:grid-cols-4 gap-3  place-items-center py-7 px-5'>
           <div>
-            <Link href={'https://www.facebook.com/EcK0Photography/videos/159396330512883'} target='_blank'>
+            <Link href={'https://www.facebook.com/EcK0Photography/videos/159396330512883'} target='_blank' title='Kevin & Shane | PRE-WEDDING VIDEO🍂'>
               <Image src={KevShane} alt='Kevin & Shane' className='h-36 w-48 md:h-52 md:w-80 object-cover'/>
             </Link>
           </div>
           <div>
-            <Link href={'https://www.facebook.com/EcK0Photography/videos/1549232525833176'} target='_blank'>
+            <Link href={'https://www.facebook.com/EcK0Photography/videos/1549232525833176'} target='_blank' title='Alyssa and Jonathan | PRE-WEDDING VIDEO🍂'>
               <Image src={AlyJon} alt='Alyssa and Jonathan' className='h-36 w-48 md:h-52 md:w-80 object-cover'/>
             </Link>
           </div>
@@ -110,7 +110,7 @@ const Navbar = () => {
             </Link>
           </div>
           <div>
-            <Link href={'https://www.facebook.com/100063981616155/videos/395094810114707'} target='_blank' > 
+            <Link href={'https://www.facebook.com/100063981616155/videos/395094810114707'} target='_blank' title='Alyssa & Flynn | PRE-WEDDING VIDEO 🍂'> 
               <Image src={FlynAlly} alt='Flynn & Alyssa' className='h-36 w-48 md:h-52 md:w-80 object-cover'/>
             </Link>
           </div>
