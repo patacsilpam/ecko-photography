@@ -21,6 +21,7 @@ const nominations = () => {
                 <a href="#item1" className="btn btn-xs">1</a> 
                 <a href="#item2" className="btn btn-xs">2</a> 
             </div> */}
+          
         </div>
     </div>
   )

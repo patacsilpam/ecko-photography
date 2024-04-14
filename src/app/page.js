@@ -7,10 +7,10 @@ import NominationComponent from './components/nominations';
 import { LiaFacebookSquare } from "react-icons/lia";
 import { LiaInstagram } from "react-icons/lia";
 import { MdOutlineEmail } from "react-icons/md";
-import Wedding from './../../public/assets/wedding.webp'
-import Prenup from './../../public/assets/prenup.webp'
-import Debut from './../../public/assets/debut.webp'
-import Christening from './../../public/assets/christening.webp'
+import AlyJon from './../../public/assets/alyssa_jonathan.webp'
+import FlynAlly from './../../public/assets/flynn_alyssa.webp'
+import KevShane from './../../public/assets/kevin_shane.webp'
+import MaricelRodolfo from './../../public/assets/maricel_rodolfo.webp'
 import Link from 'next/link';
 import Image from 'next/image';
 
@@ -95,16 +95,24 @@ const Navbar = () => {
           {/*videos link */}
         <section className='grid grid-cols-2 md:grid-cols-4 gap-3  place-items-center py-7 px-5'>
           <div>
-            <Image src={Wedding} alt='wedding' className='h-36 w-48 md:h-52 md:w-80 object-cover'/>
+            <Link href={'https://www.facebook.com/EcK0Photography/videos/159396330512883'} target='_blank'>
+              <Image src={KevShane} alt='Kevin & Shane' className='h-36 w-48 md:h-52 md:w-80 object-cover'/>
+            </Link>
           </div>
           <div>
-            <Image src={Prenup} alt='prenup' className='h-36 w-48 md:h-52 md:w-80 object-cover'/>
+            <Link href={'https://www.facebook.com/EcK0Photography/videos/1549232525833176'} target='_blank'>
+              <Image src={AlyJon} alt='Alyssa and Jonathan' className='h-36 w-48 md:h-52 md:w-80 object-cover'/>
+            </Link>
           </div>
           <div>
-            <Image src={Debut} alt='debut' className='h-36 w-48 md:h-52 md:w-80 object-cover'/>
+            <Link href={'https://www.facebook.com/EcK0Photography/videos/347376407365734'} target='_blank' title='𝐌𝐚𝐫𝐢𝐜𝐞𝐥 & 𝐑𝐨𝐝𝐨𝐥𝐟𝐨 | Wedding Video Highlights🍂'>
+              <Image src={MaricelRodolfo} alt='Maricel & Rodolfo' className='h-36 w-48 md:h-52 md:w-80 object-cover'/>
+            </Link>
           </div>
           <div>
-            <Image src={Christening} alt='christening' className='h-36 w-48 md:h-52 md:w-80 object-cover'/>
+            <Link href={'https://www.facebook.com/100063981616155/videos/395094810114707'} target='_blank' > 
+              <Image src={FlynAlly} alt='Flynn & Alyssa' className='h-36 w-48 md:h-52 md:w-80 object-cover'/>
+            </Link>
           </div>
         </section> 
         <hr className='border-[#b98a1c58] px-3 mx-5 md:mx-10'/>
