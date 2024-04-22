@@ -25,12 +25,12 @@ const Tabs = () => {
           </button>
         ))}
       </div>
-      <div className="mt-4 ">
+      <div className="mt-4 grid grid-cols-3">
         {
           tabs[activeTab].content.map((tab,index) =>
             <div key={index}>
                 <p>{tab.story}</p>
-                <Image src={tab.image} alt={tab.story} width={50} height={50}/>
+                <Image src={tab.image} alt={tab.story} width={250} height={250}/>
             </div> 
           )
         }
