@@ -3,22 +3,29 @@
     "label": "WEDDING",
     "content": [
       {
-        "story": "Dulce & Lyndon"
+        "story": "Dulce & Lyndon",
+        "image": "/assets/weddings/dulce_lyndon.webp"
       },
       {
-        "story": "Larah & Adriel"
+        "story": "Larah & Adriel",
+        "image": "/assets/weddings/larah_adriel.webp"
       },
       {
-        "story": "Irma & Jordan"
+        "story": "Irma & Jordan",
+        "image": "/assets/weddings/irma_jordan.webp"
       },
       {
-        "story": "Kris & JC"
+        "story": "Kris & JC",
+        "image": "/assets/weddings/kris_js.webp"
       },
       {
-        "story": "Emilyn & Carl"
+        "story": "Emilyn & Carl",
+        "image": "/assets/weddings/emilyn_carl.webp"
+        
       },
       {
-        "story": "Peter & Bianca"
+        "story": "Peter & Bianca",
+        "image": "/assets/weddings/peter_bianca.webp"
       }
     ]
   },
