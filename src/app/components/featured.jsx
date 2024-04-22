@@ -1,6 +1,7 @@
 // components/Tabs.js
 import { useState } from 'react';
 import tabs from '../../../data/weddings'
+import Image from 'next/image';
 
 const Tabs = () => {
   const [activeTab, setActiveTab] = useState(0);
@@ -29,6 +30,7 @@ const Tabs = () => {
           tabs[activeTab].content.map((tab,index) =>
             <div key={index}>
                 <p>{tab.story}</p>
+                <Image src={tab.image} alt={tab.story} width={50} height={50}/>
             </div> 
           )
         }
