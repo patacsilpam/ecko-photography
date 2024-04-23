@@ -18,7 +18,7 @@ const Tabs = () => {
               index === activeTab
                 ? ' text-[#292929] font-semibold'
                 : ' text-[#a6a6a9]'
-            }  rounded focus:outline-none`}
+            }  rounded focus:outline-none text-xl`}
             onClick={() => setActiveTab(index)}
           >
             {tab.label}
