@@ -59,10 +59,31 @@
     ]
   },
   {
-    "label": "DEBUT",
+    "label": "PRE-DEBUT",
     "content": [
       {
-        "story": "Dulce & Lyndon"
+        "story": "Nicole & Russel",
+        "image": "/assets/pre-debut/yesha.webp"
+      },
+      {
+        "story": "Tricia",
+        "image": "/assets/pre-debut/tricia.webp"
+      },
+      {
+        "story": "Science Myrtel",
+        "image": "/assets/pre-debut/science_myrtel.webp"
+      },
+      {
+        "story": "Natasha",
+        "image": "/assets/pre-debut/natasha.webp"
+      },
+      {
+        "story": "ANNA LEI",
+        "image": "/assets/pre-debut/anna_lie.webp"
+      },
+      {
+        "story": "Alyssa Jane",
+        "image": "/assets/pre-debut/alyssa_jane.webp"
       }
     ]
   },
