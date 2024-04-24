@@ -12,28 +12,28 @@ const services = () => {
         </div>
         <div className="carousel w-full">
             <div id="slide1" className="carousel-item relative w-full ">
-                <Image src={Wedding} className='w-full h-screen object-cover' alt='wedding'/>
+                <Image src={Wedding} className='w-full h-screen object-contain' alt='wedding'/>
                 <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                     <a href="#slide4" className="btn btn-circle opacity-60">❮</a> 
                     <a href="#slide2" className="btn btn-circle opacity-60">❯</a>
                 </div>
             </div> 
             <div id="slide2" className="carousel-item relative w-full">
-                <Image src={Prenup} className='w-full h-screen object-cover' alt='prenup'/>
+                <Image src={Prenup} className='w-full h-screen object-contain' alt='prenup'/>
                 <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                     <a href="#slide1" className="btn btn-circle opacity-60">❮</a> 
                     <a href="#slide3" className="btn btn-circle opacity-60">❯</a>
                 </div>
             </div> 
             <div id="slide3" className="carousel-item relative w-full">
-                <Image src={Debut} className='w-full h-screen' alt='debut'/>
+                <Image src={Debut} className='w-full h-screen object-contain' alt='debut' priority/>
                 <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                     <a href="#slide2" className="btn btn-circle opacity-60">❮</a> 
                     <a href="#slide4" className="btn btn-circle opacity-60">❯</a>
                 </div>
             </div> 
             <div id="slide4" className="carousel-item relative w-full">
-                <Image src={Christening} className='w-full h-screen object-cover' alt='christening'/>
+                <Image src={Christening} className='w-full h-screen object-contain' alt='christening'/>
                 <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                     <a href="#slide3" className="btn btn-circle opacity-60">❮</a> 
                     <a href="#slide1" className="btn btn-circle opacity-60">❯</a>
