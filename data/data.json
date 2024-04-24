@@ -33,7 +33,28 @@
     "label": "PRENUP",
     "content": [
       {
-        "story": "Dulce & Lyndon"
+        "story": "Peter & Bianca",
+        "image": "/assets/prenup/peter_bianca.webp"
+      },
+      {
+        "story": "John Jeric & Cristalyn",
+        "image": "/assets/prenup/john_jeric_cristalyn.webp"
+      },
+      {
+        "story": "Kevin & Shane",
+        "image": "/assets/prenup/kevin_shane.webp"
+      },
+      {
+        "story": "Nicole & Russel",
+        "image": "/assets/prenup/nicole_russel.webp"
+      },
+      {
+        "story": "Nicole & Russel",
+        "image": "/assets/prenup/rocky_michelle.webp"
+      },
+      {
+        "story": "Nicole & Russel",
+        "image": "/assets/prenup/jeffrey_ofelia.webp"
       }
     ]
   },
