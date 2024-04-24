@@ -1,6 +1,6 @@
 // components/Tabs.js
 import { useState } from 'react';
-import tabs from '../../../data/weddings'
+import tabs from '../../../data/data'
 import Image from 'next/image';
 
 const Tabs = () => {
@@ -18,7 +18,7 @@ const Tabs = () => {
               index === activeTab
                 ? ' text-[#292929] font-semibold'
                 : ' text-[#a6a6a9]'
-            }  rounded focus:outline-none text-xl`}
+            }  rounded focus:outline-none text-sm md:text-xl`}
             onClick={() => setActiveTab(index)}
           >
             {tab.label}
@@ -30,8 +30,8 @@ const Tabs = () => {
           tabs[activeTab].content.map((tab,index) =>
             <div key={index} className='mb-10'>
                 
-                <Image src={tab.image} alt={tab.story} className='h-50 w-50' width={350} height={350}/>
-                <p className='text-center p-2'>{tab.story}</p>
+                <Image src={tab.image} alt={tab.story} className='object-cover p-5' width={450} height={450} priority/>
+                <p className='text-center'>{tab.story}</p>
             </div> 
           )
         }
