@@ -4,6 +4,7 @@ import SocialProofComponent from './components/proof';
 import ServicesComponent from './components/services'
 import FeaturedComponent from './components/featured';
 import NominationComponent from './components/nominations';
+import CalendlyEmbed from './calendly';
 import { LiaFacebookSquare } from "react-icons/lia";
 import { LiaInstagram } from "react-icons/lia";
 import { MdOutlineEmail } from "react-icons/md";
@@ -60,7 +61,11 @@ const Navbar = () => {
         <div className='flex flex-col items-center'>
           <h1 className="text-white md:text-5xl text-1xl font-bold">The pause button of life.</h1>
           <span className="text-white md:text-lg  mt-3">Experience the beauty of life&apos;s pauses through our lens.</span> 
-          <button className="bg-[#277764] hover:bg-[#277764e4] text-slate-50 p-2 rounded-full w-36 mt-3">Book Now</button>
+          <button className="bg-[#277764] hover:bg-[#277764e4] text-slate-50 p-2 rounded-full w-36 mt-3">
+            <Link href="https://calendly.com/pammpatacsil/book-now" target='_blank'>Book Now</Link>
+          </button>
+         
+          
         </div>
       </div>
     </nav>
