@@ -9,6 +9,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" >
+      <head>
+      <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet"/>
+      </head>
       <body className={inter.className}>
         <main className="font-garamond">{children}</main>
       </body>
