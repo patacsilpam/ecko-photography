@@ -6,7 +6,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div>
-        <nav className='bg-cover h-screen relative' style={{backgroundImage:"url('assets/banner.webp')"}}>
+      <nav className='bg-cover h-screen relative'>
       <div className="absolute bg-slate-600 bg-opacity-10 -z-1"></div>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ">
         <div className="flex justify-between h-16">
@@ -43,17 +43,6 @@ const Navbar = () => {
           </div>
         </div>
       )}
-      <div className=" absolute left-1/2 top-1/2 -translate-x-1/2 text-center -mt-12">
-        <div className='flex flex-col items-center'>
-          <h1 className="text-white md:text-5xl text-1xl font-bold">The pause button of life.</h1>
-          <span className="text-white md:text-lg  mt-3">Experience the beauty of life&apos;s pauses through our lens.</span> 
-          <button className="bg-[#277764] hover:bg-[#277764e4] text-slate-50 p-2 rounded-full w-36 mt-3">
-            <Link href="https://calendly.com/pammpatacsil/book-now" target='_blank'>Book Now</Link>
-          </button>
-         
-          
-        </div>
-      </div>
     </nav>
     </div>
   )
