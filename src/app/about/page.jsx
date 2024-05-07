@@ -1,8 +1,11 @@
 import React from 'react'
+import UnderConstruction from '../headers/underconstruction'
 
 const About = () => {
   return (
-    <div>page</div>
+    <div>
+      <UnderConstruction/>
+    </div>
   )
 }
 

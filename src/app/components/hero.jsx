@@ -5,7 +5,7 @@ const hero = () => {
   return (
    
     <div>
-    
+        
     </div>
   )
 }
