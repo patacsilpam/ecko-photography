@@ -1,6 +1,6 @@
 'use client'
-import React, { useState } from 'react';
-import NavbarComponent from './components/hero'
+import React  from 'react';
+import HeroComponent from './components/hero'
 import SocialProofComponent from './components/proof';
 import ServicesComponent from './components/services'
 import FeaturedComponent from './components/featured';
@@ -10,7 +10,7 @@ import FooterComponent from './headers/footer'
 const Navbar = () => {
   return (
     <div>
-     <NavbarComponent/>
+     <HeroComponent/>
      <NominationComponent/>
      <SocialProofComponent/>
      <ServicesComponent/>

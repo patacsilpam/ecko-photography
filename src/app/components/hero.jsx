@@ -3,7 +3,7 @@ import Link from 'next/link';
 const hero = () => {
     const [isOpen, setIsOpen] = useState(false);
   return (
-    
+   
     <div>
     <nav className='bg-cover h-screen relative' style={{backgroundImage:"url('assets/banner.webp')"}}>
       <div className="absolute bg-slate-600 bg-opacity-10 -z-1"></div>
