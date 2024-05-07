@@ -1,8 +1,11 @@
+"use client"
 import React from 'react'
-
+import UnderConstruction from '../headers/underconstruction'
 const Portfolio = () => {
   return (
-    <div>portfolio</div>
+    <div>
+        <UnderConstruction/>
+    </div>
   )
 }
 
