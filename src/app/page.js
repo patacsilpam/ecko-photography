@@ -1,6 +1,6 @@
 'use client'
 import React, { useState } from 'react';
-import NavbarComponent from './headers/navbar'
+import NavbarComponent from './components/hero'
 import SocialProofComponent from './components/proof';
 import ServicesComponent from './components/services'
 import FeaturedComponent from './components/featured';
