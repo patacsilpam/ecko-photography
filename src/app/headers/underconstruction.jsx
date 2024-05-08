@@ -1,9 +1,13 @@
-import React from 'react'
-import Navbar from './navbar';
+"use client"
+import React, {useState} from 'react'
+
 const underconstruction = () => {
   return (
     <div>
-        <Navbar/>
+       
+        <div className="bg-white h-screen">
+        <p className=''>This page is under construction</p>
+        </div>
     </div>
   )
 }

@@ -1,6 +1,6 @@
-'use client'
-import React, { useState }  from 'react';
-import HeroComponent from './components/hero'
+"use client"
+import React  from 'react';
+import { useState } from 'react';
 import SocialProofComponent from './components/proof';
 import ServicesComponent from './components/services'
 import FeaturedComponent from './components/featured';
@@ -8,10 +8,10 @@ import NominationComponent from './components/nominations';
 import FooterComponent from './headers/footer'
 import Link from 'next/link';
 const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen,setIsOpen] = useState(false);
   return (
     <div>
-     <nav className='bg-cover h-screen relative' style={{backgroundImage:"url('assets/banner.webp')"}}>
+      <nav className='bg-cover h-screen relative' style={{backgroundImage:"url('assets/banner.webp')"}}>
       <div className="absolute bg-slate-600 bg-opacity-10 -z-1"></div>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ">
         <div className="flex justify-between h-16">
@@ -63,6 +63,7 @@ const Navbar = () => {
      <ServicesComponent/>
      <FeaturedComponent/> 
      <FooterComponent/>
+     
     </div>
   );
 };

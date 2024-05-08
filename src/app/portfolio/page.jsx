@@ -1,10 +1,14 @@
 "use client"
 import React from 'react'
-import UnderConstruction from '../headers/underconstruction'
+import Underconstruction from '../headers/underconstruction'
+import Navbar from './../headers/navbar'
 const Portfolio = () => {
   return (
-    <div>
-        <UnderConstruction/>
+    <div className='bg-white'>
+       <Navbar/>
+        <Underconstruction/>
+        portfolio
+   
     </div>
   )
 }

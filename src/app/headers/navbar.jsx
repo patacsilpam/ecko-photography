@@ -1,12 +1,11 @@
-import React from 'react'
-import { useState } from 'react';
+import React, { useState } from 'react'
 import Link from 'next/link';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div>
-      <nav className='bg-cover h-screen relative'>
+      <nav className=''>
       <div className="absolute bg-slate-600 bg-opacity-10 -z-1"></div>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ">
         <div className="flex justify-between h-16">
