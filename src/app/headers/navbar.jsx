@@ -10,15 +10,15 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ">
         <div className="flex justify-between h-16">
           <div className="flex-shrink-0 flex items-center">
-            <Link href="#" className="text-[#FFFFFF] text-2xl font-bold">Ecko Photography</Link>
+            <Link href="#" className="text-gray-700 text-2xl font-bold">Ecko Photography</Link>
           </div>
           <div className="flex items-center">
             <div className="hidden lg:block space-x-12">
-              <Link href="/" className="text-[#FFFFFF]  hover:text-[#277764] px-3 py-2 rounded-md text-lg font-semibold">Home</Link>
-              <Link href="/portfolio" className="text-[#FFFFFF]  hover:text-[#277764] px-3 py-2 rounded-md text-lg font-semibold">Portfolio</Link>
-              <Link href="/packages" className="text-[#FFFFFF]  hover:text-[#277764] px-3 py-2 rounded-md text-lg font-semibold">Packages</Link>
-              <Link href="/about" className="text-[#FFFFFF]  hover:text-[#277764] px-3 py-2 rounded-md text-lg font-semibold">About</Link>
-              <Link href="/contact" className="text-[#FFFFFF]  hover:text-[#277764] px-3 py-2 rounded-md text-lg font-semibold">Contact</Link>
+              <Link href="/" className="text-gray-700 hover:text-[#277764] px-3 py-2 rounded-md text-lg font-semibold">Home</Link>
+              <Link href="/portfolio" className="text-gray-700  hover:text-[#277764] px-3 py-2 rounded-md text-lg font-semibold">Portfolio</Link>
+              <Link href="/packages" className="text-gray-700  hover:text-[#277764] px-3 py-2 rounded-md text-lg font-semibold">Packages</Link>
+              <Link href="/about" className="text-gray-700 hover:text-[#277764] px-3 py-2 rounded-md text-lg font-semibold">About</Link>
+              <Link href="/contact" className="text-gray-700 hover:text-[#277764] px-3 py-2 rounded-md text-lg font-semibold">Contact</Link>
             </div>
             <div className="lg:hidden">
               <button onClick={() => setIsOpen(!isOpen)} className="text-white hover:text-gray-300 focus:outline-none">
