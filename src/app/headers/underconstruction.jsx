@@ -5,8 +5,8 @@ const underconstruction = () => {
   return (
     <div>
        
-        <div className="bg-white h-screen">
-        <p className=''>This page is under construction</p>
+        <div className="">
+          <p className=''>This page is under construction</p>
         </div>
     </div>
   )
