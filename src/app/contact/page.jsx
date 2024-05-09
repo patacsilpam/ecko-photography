@@ -1,10 +1,12 @@
+"use client"
 import React from 'react'
-import UnderConstruction from '../headers/underconstruction'
-
+import Underconstruction from '../headers/underconstruction'
+import Navbar from './../headers/navbar'
 const Contact = () => {
   return (
-    <div>
-      <UnderConstruction/>
+    <div className='bg-white h-screen'>
+      <Navbar/>
+      <Underconstruction/>
     </div>
   )
 }
