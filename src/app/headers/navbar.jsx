@@ -23,7 +23,7 @@ const Navbar = () => {
   return (
     <div className='fixed top-0 z-50'>
       <div>
-        <nav className={`flex flex-row justify-around w-screen p-5 ${scrolling ? 'bg-[#102923] duration-75 transition-all ease-in-out' : ''}`}>
+        <nav className={`flex flex-row justify-around w-screen p-5 ${scrolling ? 'bg-[#102923] duration-500 transition-all ease-in-out p-10' : ''}`}>
           {/*LOGO <div className="absolute bg-slate-600 bg-opacity-10 -z-1"></div>*/}
           <div>
             <Link href="#" className="text-[#ffffff] text-2xl font-bold">Ecko Photography</Link>
