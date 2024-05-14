@@ -1,23 +1,40 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import Link from 'next/link';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [scrolling, setScrolling] = useState(false);
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 250) {
+        setScrolling(true);
+      } else {
+        setScrolling(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
     <div className='fixed top-0 z-50'>
       <div>
-        <nav className='flex flex-row justify-around w-screen mt-5'>
+        <nav className={`flex flex-row justify-around w-screen p-5 ${scrolling ? 'bg-[#102923] duration-75 transition-all ease-in-out' : ''}`}>
           {/*LOGO <div className="absolute bg-slate-600 bg-opacity-10 -z-1"></div>*/}
           <div>
             <Link href="#" className="text-[#ffffff] text-2xl font-bold">Ecko Photography</Link>
           </div>
           <div>
             <ul className='hidden lg:block space-x-10'>
-              <Link href="/" className="text-[#ffffff] hover:text-[#277764] px-3 py-2 rounded-md text-xl">Home</Link>
-              <Link href="/portfolio" className="text-[#ffffff]  hover:text-[#277764] px-3 py-2 rounded-md text-xl ">Portfolio</Link>
-              <Link href="/packages" className="text-[#ffffff]  hover:text-[#277764] px-3 py-2 rounded-md text-xl ">Packages</Link>
-              <Link href="/about" className="text-[#ffffff] hover:text-[#277764] px-3 py-2 rounded-md text-xl ">About</Link>
-              <Link href="/contact" className="text-[#ffffff] hover:text-[#277764] px-3 py-2 rounded-md text-xl ">Contact</Link>
+              <Link href="/" className="text-[#ffffff] hover:text-[#102923] hover:underline transition hover:ease-in-out px-3 py-2 rounded-md text-md font-semibold">HOME</Link>
+              <Link href="/portfolio" className="text-[#ffffff]  hover:text-[#102923] hover:underline  px-3 py-2 rounded-md text-md font-semibold">PORTFOLIO</Link>
+              <Link href="/packages" className="text-[#ffffff]  hover:text-[#102923] hover:underline px-3 py-2 rounded-md text-md font-semibold">PACKAGES</Link>
+              <Link href="/about" className="text-[#ffffff] hover:text-[#102923] hover:underline px-3 py-2 rounded-md text-md font-semibold">ABOUT</Link>
+              <Link href="/contact" className="text-[#ffffff] hover:text-[#102923] hover:underline px-3 py-2 rounded-md text-md font-semibold">CONTACT</Link>
             </ul>
             <div className="lg:hidden">
               <button onClick={() => setIsOpen(!isOpen)} className="text-white hover:text-gray-300 focus:outline-none">
