@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import Link from 'next/link';
-
+import { motion } from "framer-motion";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolling, setScrolling] = useState(false);
@@ -21,7 +21,14 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className='fixed top-0 z-50'>
+    <motion.div className='box fixed top-0 z-50'
+    initial={{ opacity: 0, scale: 0.5 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{
+        duration: 0.8,
+        delay: 0.5,
+        ease: [0, 0.71, 0.2, 0.81]
+      }}>
       <div>
         <nav className={`flex flex-row justify-around w-screen p-5 ${scrolling ? 'bg-[#102923] duration-500 transition-all ease-in-out p-10' : ''}`}>
           {/*LOGO <div className="absolute bg-slate-600 bg-opacity-10 -z-1"></div>*/}
@@ -62,7 +69,7 @@ const Navbar = () => {
           </div>
         )}
       </div>
-    </div>
+    </motion.div>
   )
 }
 
