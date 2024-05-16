@@ -25,8 +25,8 @@ const Navbar = () => {
     initial={{ opacity: 0, scale: 0.5 }}
       animate={{ opacity: 1, scale: 1 }}
       transition={{
-        duration: 0.8,
-        delay: 0.5,
+        duration: 0.5,
+        delay: 0.2,
         ease: [0, 0.71, 0.2, 0.81]
       }}>
       <div>
@@ -37,11 +37,11 @@ const Navbar = () => {
           </div>
           <div>
             <ul className='hidden lg:block space-x-10'>
-              <Link href="/" className="text-[#ffffff] hover:text-[#102923] hover:underline transition hover:ease-in-out px-3 py-2 rounded-md text-md font-semibold">HOME</Link>
-              <Link href="/portfolio" className="text-[#ffffff]  hover:text-[#102923] hover:underline  px-3 py-2 rounded-md text-md font-semibold">PORTFOLIO</Link>
-              <Link href="/packages" className="text-[#ffffff]  hover:text-[#102923] hover:underline px-3 py-2 rounded-md text-md font-semibold">PACKAGES</Link>
-              <Link href="/about" className="text-[#ffffff] hover:text-[#102923] hover:underline px-3 py-2 rounded-md text-md font-semibold">ABOUT</Link>
-              <Link href="/contact" className="text-[#ffffff] hover:text-[#102923] hover:underline px-3 py-2 rounded-md text-md font-semibold">CONTACT</Link>
+              <Link href="/" className="text-[#ffffff]  hover:underline transition hover:ease-in-out px-3 py-2 rounded-md text-md font-semibold">HOME</Link>
+              <Link href="/portfolio" className="text-[#ffffff]   hover:underline  px-3 py-2 rounded-md text-md font-semibold">PORTFOLIO</Link>
+              <Link href="/packages" className="text-[#ffffff]   hover:underline px-3 py-2 rounded-md text-md font-semibold">PACKAGES</Link>
+              <Link href="/about" className="text-[#ffffff]  hover:underline px-3 py-2 rounded-md text-md font-semibold">ABOUT</Link>
+              <Link href="/contact" className="text-[#ffffff]  hover:underline px-3 py-2 rounded-md text-md font-semibold">CONTACT</Link>
             </ul>
             <div className="lg:hidden">
               <button onClick={() => setIsOpen(!isOpen)} className="text-white hover:text-gray-300 focus:outline-none">
